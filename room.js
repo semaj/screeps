@@ -57,32 +57,6 @@ function nextSourceRoad(room) {
     }
   });
   return built;
-  //room.memory.map[29][21] = 0;
-  //room.memory.map[29][22] = 0;
-  //room.memory.map[29][23] = 0;
-  //room.memory.map[28][23] = 0;
-  //room.memory.map[30][23] = 0;
-  //room.memory.map[31][23] = 0;
-  //room.memory.map[34][21] = 0;
-  //room.memory.map[35][20] = 0;
-  //room.memory.map[35][20] = 0;
-  //room.memory.map[36][21] = 0;
-  //room.memory.map[35][22] = 0;
-  //if (candidate) {
-    //let rv = room.createConstructionSite(candidate[0], candidate[1], 'road');
-    //console.log(`Trying Building road ${candidate}`);
-    //if (rv == OK) {
-      //if (!room.memory.structures['road']) {
-        //room.memory.structures['road'] = 0;
-      //}
-      //room.memory.map[candidate[0]][candidate[1]] = -1;
-      //room.memory.structures['road']++;
-      //return true;
-    //} else {
-      //console.log(`Building road ${candidate} error ${rv}`);
-    //}
-  //}
-  //return false;
 }
 
 function nextSwampRoad(room) {
@@ -174,9 +148,6 @@ var self = module.exports = {
       self.bootstrap(room);
     }
     nextBuild(room);
-    //if (room.memory.structures.container == 5) {
-      //room.memory.structures.container = 0;
-    //}
   },
   allRole(room, roles) {
     return _.filter(_.values(Game.creeps),
